@@ -1,0 +1,7 @@
+{
+  "name": "bioskop-booking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
