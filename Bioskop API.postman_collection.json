@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5fc4169f-71b7-472e-81f0-b92e6d2292e6",
+		"name": "Bioskop API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33523010"
+	},
+	"item": [
+		{
+			"name": "All US Film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/popular?api_key=f65a5563991c62acbc41fa076b10bac2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"popular"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "f65a5563991c62acbc41fa076b10bac2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
