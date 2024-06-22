@@ -1,27 +1,118 @@
-#container {
-  text-align: center;
+ion-item {
+  --background: rgba(248, 248, 250, .96);
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  h2 {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 8px;
+  }
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content {
+  --background: #f8f8fa;
 }
 
-#container p {
+ion-searchbar {
+  --box-shadow: none;
+  --border-radius: 12px;
+}
+
+.backdrop_title {
+  font-weight: bold;
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  margin-left: 1rem;
 }
 
-#container a {
-  text-decoration: none;
+.cover {
+  box-shadow: none;
+  height: 200px;
+  img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transform: scale(1.1, 1.1) rotate(1deg);
+      transition: 600ms all ease-in-out;
+      margin-bottom: 15px;
+      border-radius: 16px;
+  }
 }
+
+.more {
+  font-size: 12px;
+  color: #FB4E4E;
+}
+
+.judul {
+  font-weight: bold;
+  margin-bottom: -10px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border-radius: 14px;
+  box-shadow: none;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+
+swiper-slide {
+  margin-right: -10px;
+}
+
+ion-card-content {
+  .img-wrapper {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100px;
+  }
+
+  ion-card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  ion-icon {
+    color: #f2994a;
+    padding-right: 4px;
+  }
+
+  ion-card-subtitle:last-of-type {
+    padding-top:6px;
+  }
+}
+
+// .card {
+//   margin: 0;
+//   margin-right: 10px;
+//   height: 100%;
+//   width: -100px;
+//   box-shadow: none;
+//   border-radius: 14px;
+// }
+
+// ion-card-content {
+//   .img-wrapper {
+//     border-radius: 14px;
+//     height: 100%;
+//     width: 50%;
+//     overflow: hidden;
+//     margin-bottom: 8px;
+//     font-size: medium;
+//   }
+
+//   ion-icon {
+//     color: #f2994a;
+//     padding-right: 4px;
+//   }
+
+//   ion-card-subtitle:last-of-type {
+//     padding-top:6px;
+//   }
+// }

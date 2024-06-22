@@ -1,0 +1,71 @@
+.header {
+    font-size:17px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.time-button {
+    --color: red;
+}
+
+.card-size {
+    height: 130px;
+    width: 100%;
+    box-shadow: none;
+    border-color: rgb(230, 227, 227);
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}    
+
+.card-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.app-logo {
+    height: 20px;
+    width: 50px;
+    border: 15px;
+}
+
+.description {
+    padding: 30px;
+}
+
+.app-name {
+    font-weight: bold;
+}
+
+.payment-container {
+    border-bottom: 5px solid rgb(241, 237, 237);
+}
+
+.list-title {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.confirm-button {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 32px);
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}

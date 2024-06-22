@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>{{ movie.title }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="movie" class="card">
+    <img [src]="movie.poster_path" alt="Poster {{ movie.title }}" class="poster">
+    
+    <ion-card-header>
+      <ion-card-title>{{ movie.title }}</ion-card-title>
+      <ion-card-subtitle>{{ movie.original_title }}</ion-card-subtitle>
+      <ion-text color="tertiary">
+        <span *ngFor="let g of movie.genres; let isLast = last">{{ g.name }} {{ !isLast ? '.' : '' }}</span>
+      </ion-text>
+      <ion-button class="play-icon" color="danger">Watch Trailer</ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label color="medium">{{ movie.overview }}</ion-label>
+
+      <ion-item lines="none">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-label>{{ movie.release_date | date: 'y' }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        <p class="show-title">SELECT DATE & TIME</p> 
+        <app-calendar></app-calendar>
+        <div class="room-container">
+          <h2 class="room">CINEMA 1</h2>
+          <p class="price">From Rp35.000</p>
+          <div class="schedule-container">
+            <ion-button fill="outline" color="medium">
+              <div class="button-content">
+                <div class="time-container">
+                  <h2 class="time">11:00 - 12:46</h2>
+                </div>
+                <div class="seat">
+                  <p>30/48 Seat</p>
+                </div>
+              </div>
+            </ion-button>
+
+            <ion-button fill="outline" color="medium">
+              <div class="button-content">
+                <div class="time-container">
+                  <h2 class="time">13:00 - 14:46</h2>
+                </div>
+                <div class="seat">
+                  <p>44/48 Seat</p>
+                </div>
+              </div>
+            </ion-button>
+
+            <ion-button fill="outline" color="medium">
+              <div class="button-content">
+                <div class="time-container">
+                  <h2 class="time">17:20 - 19:41</h2>
+                </div>
+                <div class="seat">
+                  <p>48/48 Seat</p>
+                </div>
+              </div>
+            </ion-button>
+          </div>
+        </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button id="open-modal" expand="block" routerLink="/select-seat">Book Now</ion-button>
+
+</ion-content>
+
+  

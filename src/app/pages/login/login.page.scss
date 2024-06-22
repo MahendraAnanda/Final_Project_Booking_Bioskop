@@ -1,0 +1,110 @@
+ion-content {
+    --background: #fff ;
+}
+
+.background {
+    position: fixed;
+    top: 0; /* Mengatur posisi atas menjadi 0 */
+    left: 0; /* Mengatur posisi kiri menjadi 0 */
+    width: 100%; /* Menetapkan lebar gambar menjadi 100% */
+}
+
+.header {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    margin-top: 65%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(144, 143, 143);
+}
+
+.input-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input {
+    --background: #fff;
+    border: 1px solid gray;
+    border-radius: 1px;
+    border-bottom: 47px solid gray;
+}
+
+.full {
+    --color: #fff;
+    --background: #b0acac;
+    height: 35px;
+}
+
+.continue-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(229, 224, 224);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.google-container {
+    height: 62px;
+    --background: #484444;
+}
+
+.google-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    margin-left: -60px;
+}
+
+.google-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+}
+
+.left {
+    margin-top: 17px;
+    font-size: 15px;
+}
+
+.right {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+}
+
+.right ion-label {
+    padding: -10px;
+    margin: -10px;
+    color: red;
+}
+
+
+
+
+
+
+
+

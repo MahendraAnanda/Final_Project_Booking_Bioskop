@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-avatar aria-hidden="true" slot="end">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Hi {{ username }} !</h2>
+      <p>Mau nonton apa hari ini?</p>
+    </ion-label>
+  </ion-item>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <ion-searchbar placeholder="Cari film" color="light"></ion-searchbar>
   </div>
+
+  <div>
+    <h3 class="judul">Segera Tayang!</h3>
+  </div>
+
+  <swiper-container class="mySwiper" [slidesPerView]="1.2" [spaceBetween]="10">
+    <swiper-slide class="swiper-slide" *ngFor="let movie of movies">
+      <ion-card class="cover">
+        <img [src]="movie.poster_path">
+      </ion-card>
+      <h4 class="backdrop_title">{{ movie.title }}</h4>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h3 class='judul'>Sedang Tayang!</h3>
+        <swiper-container [slidesPerView]="2.2">
+          <swiper-slide *ngFor="let movie of movies">
+            <ion-card class="card" [routerLink]="['/movie-detail', movie.id]">
+              <ion-card-content class="ion-text-left">
+                <div class="img-wrapper">
+                  <ion-img [src]="movie.poster_path" alt="Poster"></ion-img>
+                </div>
+                <ion-card-title>{{ movie.title }}</ion-card-title>
+                <ion-card-subtitle>
+                  {{ movie.vote_average }} / 10
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

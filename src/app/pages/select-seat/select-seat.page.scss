@@ -1,0 +1,100 @@
+ion-header {
+    ion-toolbar {
+      ion-title {
+        font-size:17px;
+        font-weight: bold;
+        align-items: center;
+      }
+    }
+  }
+  
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  ion-button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .seat-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .screen {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  
+  .seats {
+    display: inline-block;
+    width: 100%; /* Pastikan lebar penuh untuk container kursi */
+    max-width: 600px; /* Batas maksimum untuk lebar */
+  }
+  
+  .seat-row {
+  display: flex;
+  justify-content: space-between; /* Mengatur jarak antara kolom kursi */
+  margin-bottom: 10px;
+}
+  
+  button {
+    background: #ccc;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px; /* Atur lebar untuk menjaga konsistensi */
+    height: 40px; /* Atur tinggi untuk menjaga konsistensi */
+    text-align: center;
+  }
+  
+  button.selected {
+    background: #52e22a;
+    color: white;
+  }
+  
+  button.occupied {
+    background: #d63031;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .aisle {
+    width: 90px; /* Lebar cukup besar untuk menampung dua kolom */
+    margin: 0 10px; /* Tambahkan margin untuk pemisah */
+  }
+
+  .legend {
+    padding-left: 35px;
+  }
+  
+ion-footer {
+  ion-toolbar {
+    min-height: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    ion-list {
+      border-bottom: none;
+      ion-item {
+        font-style: normal;
+        padding-top: 10px;
+        ion-icon {
+          padding: 3px;
+          }
+        }
+      }
+    }
+    ion-button {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  } 
+  

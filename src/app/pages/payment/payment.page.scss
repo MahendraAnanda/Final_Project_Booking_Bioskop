@@ -1,0 +1,73 @@
+ion-header {
+    ion-toolbar {  
+      ion-title {
+        font-size:17px;
+        font-weight: bold;
+        align-items: center;
+      }
+    }
+  }
+
+.list1 {
+    margin-bottom: 12px;
+    border-bottom: 5px solid rgb(241, 237, 237);
+}
+
+.image {
+    min-width: 100px;
+    min-height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.left {
+    color: grey;
+}
+
+.right {
+    font-weight: bold;
+}
+
+.total {
+    font-weight: bold;
+    color: black;
+}
+
+.left1 {
+    color: grey;
+}
+
+.choose-payment {
+    font-weight: bold;
+}
+
+.payment-method {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.custom-button {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 120px;
+    height: 60px;
+    border-color: grey;
+}
+
+.app-logo {
+    width: 85px;
+}
+  

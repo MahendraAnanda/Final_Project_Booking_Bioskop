@@ -1,0 +1,44 @@
+<ion-content class="ion-padding">
+  <div>
+    <img class="background" src="assets/img/background-login.png" alt="background">
+</div>
+  <div class="header">
+    <h1 class="title">Login</h1>
+    <p class="description">Use your email and password to login</p>
+  </div>
+
+  <form [formGroup]="form">
+    <div>
+      <ion-label class="input-title">Email Address</ion-label>
+      <ion-input class="input" formControlName="email" type="email" placeholder="Input your email address" fill="outline"></ion-input>
+    </div>
+    <div>
+      <ion-label class="input-title">Password</ion-label>
+      <ion-input class="input" formControlName="password" placeholder="Input your password" type="password" fill="outline">
+        <ion-input-password-toggle slot="end" color="dark"></ion-input-password-toggle>
+      </ion-input>
+      
+    </div>
+    <ion-button class="full" expand="block" [disabled]="form.invalid" (click)="onLogin()">
+      <p class="continue-text">CONTINUE</p>
+    </ion-button>
+    <ion-label class="centered">
+      <p>OR</p>
+    </ion-label>
+    <ion-button class="google-container" expand="block"  (click)="signInGoogle()">
+      <img class="google-logo" src="assets/icon/google.png" alt="google">
+      <p class="google-text">CONTINUE WITH GOOGLE</p>
+    </ion-button>
+
+  </form>
+  <div class="register-container">
+    <ion-label class="left">
+      <p>Don't have an account yet?</p>
+    </ion-label>
+    <ion-button class="right" expand="block" fill="clear" routerLink="/register" color="danger">
+      <ion-label>
+        REGISTER NOW!
+      </ion-label>
+    </ion-button>
+  </div>
+</ion-content>

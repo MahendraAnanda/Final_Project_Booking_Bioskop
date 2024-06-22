@@ -1,0 +1,48 @@
+.header {
+    margin-top: 25%;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.description {
+    color: gray;
+    font-weight: bold;
+}
+
+.input-title {
+    font-size: 14px;
+}
+
+.input {
+    --background: #fff;
+    border: 1px solid gray;
+    border-radius: 1px;
+    border-bottom: 47px solid gray;
+    color: gray;
+}
+
+.full {
+    --color: #fff;
+    --background: #b0acac;
+    height: 35px;
+}
+
+.register-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(229, 224, 224);
+}
+
+.have-account {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+  }

@@ -1,0 +1,8 @@
+<div class="calendar">
+  <div class="calendar-header">
+    <div class="day" *ngFor="let day of days; let i = index" [class.today]="i === todayIndex">
+      <div class="name">{{ day.name }}</div>
+      <div class="date">{{ day.date }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="#" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Confirm Payment</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="time-button" fill="clear">
+        <ion-icon slot="icon-only" name="time-outline"></ion-icon>
+        <span>14:35</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="payment-container">
+    <ion-item>
+      <ion-card class="card-size">
+        <ion-card-content class="card-content">
+          <ion-list>
+            <ion-item style="--inner-border-width: 0;">
+              <img class="app-logo" alt="dana-logo" src="assets/icon/dana.png">
+              <ion-label class="description">
+                <p style="white-space: nowrap;">PAY WITH</p>
+                <h2 class="app-name">DANA</h2>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+
+  <ion-list>
+    <ion-item style="--inner-border-width: 0;">
+      <ion-label class="list-title">
+        Payment Detail
+      </ion-label>
+    </ion-item>
+    <ion-item style="--inner-border-width: 0;">
+      <ion-label>
+        <h2 class="label">2D Ticket</h2>
+        <p>2 items</p>
+      </ion-label>
+      <ion-text slot="end" class="label">Rp110.000</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2 class="label">Convenience Fee</h2>
+        <p>E-Payment</p>
+      </ion-label>
+      <ion-text slot="end" class="label">Rp5.000</ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <h2 class="label">Total Payment</h2>
+        <p>Tax included</p>
+      </ion-label>
+      <ion-text slot="end"class="total-price">Rp115.000</ion-text>
+    </ion-item>
+  </ion-list>
+      
+
+  <ion-button class="confirm-button" expand="block" color="dark" fill="outline" routerLink="/payment-success">CONFIRM</ion-button>
+</ion-content>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="transparent">
+    <ion-title>Payment</ion-title>
+    <ion-buttons class="header" slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="list1">
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+          <ion-thumbnail class="image" slot="start">
+            <img [src]="item.image">
+          </ion-thumbnail>
+          <ion-label>
+            <h2 class="title">Godzilla X Kong : The New Empire</h2>
+            <p>Studio 1 • 2D </p> <br>
+            <h3 class="date">Thursday, 30 May 2024 11:40 - 13:15 <br> E6, E5</h3>
+            <div class="container">
+                <p class="left">2 Tickets</p>
+                <h2 class="right">Rp110.000</h2>
+            </div>
+          </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="container2">
+          <div class="left1">
+            <p>GRAND TOTAL</p>
+            <h2 class="total">RP110.000</h2>
+            <p>Tax included</p>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+      <h2 class="choose-payment">Choose Payment Method</h2>
+      <p class="payment-method">E-PAYMENT</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item style="--inner-border-width: 0;" class="payment-container">
+      <ion-button class="custom-button"  color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/dana.png" alt="app-logo">
+      </ion-button>
+      <ion-button class="custom-button"  color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/gopay.png" alt="app-logo">
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+      <p class="payment-method">BANK TRANSFER</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item style="--inner-border-width: 0;" class="payment-container">
+      <ion-button class="custom-button" color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/bni.png" alt="app-logo">
+      </ion-button>
+      <ion-button class="custom-button" color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/bca.png" alt="app-logo">
+      </ion-button>
+      <ion-button class="custom-button" color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/bri.png" alt="app-logo">
+      </ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-button class="custom-button" color="medium" fill="outline" expand="block" routerLink="/confirm-payment">
+        <img class="app-logo" src="assets/icon/mandiri.png" alt="app-logo">
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ticket</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="openTicketModal()" class="ticket-button" expand="block">
+    <div class="ticket-status">
+      <span class="status-text">REGULAR</span>
+    </div>
+    <div class="ticket-content">
+      <div class="ticket-availability">
+          <p class="availability-text">AVAILABLE</p>
+      </div>
+      <div class="ticket-details">
+        <p class="movie-desc">Thursday, 30 May 2024 11:40</p>
+        <p class="movie-title">KONG X GODZILLA</p>
+        <p class="movie-desc">Studio 1 • 2D, Seat G13</p>
+      </div>
+    </div>
+  </ion-button>
+
+  <ion-button (click)="openTicketModal()" class="ticket-button" expand="block">
+    <div class="ticket-status">
+      <span class="status-text">REGULAR</span>
+    </div>
+    <div class="ticket-content">
+      <div class="ticket-availability">
+          <p class="availability-text">AVAILABLE</p>
+      </div>
+      <div class="ticket-details">
+        <p class="movie-desc">Today, 19:40</p>
+        <p class="movie-title">Bad Boys: Ride or Die</p>
+        <p class="movie-desc">Studio 2 • 2D, Seat E13, E12</p>
+      </div>
+    </div>
+  </ion-button>
+</ion-content>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("modal").classList.add("active");
+  });
+</script>
